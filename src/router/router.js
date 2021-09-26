@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import compo from "../components/compo";
+import Dashboard from "../components/backOffice/Dashboard";
 
 const AppRouter = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={compo} />
+        <Route path="/" component={Dashboard} />
       </Switch>
     </Router>
   );
