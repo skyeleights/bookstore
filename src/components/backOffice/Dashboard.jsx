@@ -9,25 +9,33 @@ const Dashboard = () => {
     <body>
       <header>
         <nav className="dashnav">
-          <div className="icon">
-            <FontAwesomeIcon icon={faBars} />
+          <div className="icon_title">
+            <div className="icon">
+              <FontAwesomeIcon icon={faBars} />
+            </div>
+            <div className="title">
+              <h1>Dashboard</h1>
+            </div>
           </div>
-          <h1>Dashboard</h1>
-          <input type="text" />
+          <input type="text" placeholder="search" />
           <figure>
             <div className="img">
               <img src="./images/dark8.jpg" alt="user" />
             </div>
             <figcaption>
-              <span>John doe</span>
-              <span>super admin</span>
+              <span className="name">John doe</span>
+              <span className="role">super admin</span>
             </figcaption>
           </figure>
         </nav>
         <nav className="navMobile">
-          <div className="icon">
-            <FontAwesomeIcon icon={faBars} />
-            <h1>Dashboard</h1>
+          <div className="icon_title">
+            <div className="icon">
+              <FontAwesomeIcon icon={faBars} />
+            </div>
+            <div className="title">
+              <h1>Dashboard</h1>
+            </div>
           </div>
           <figure>
             <div className="img">
