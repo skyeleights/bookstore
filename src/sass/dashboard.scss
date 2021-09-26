@@ -8,7 +8,7 @@ html {
 
 $padding-inline-mobile: 1.2rem;
 $padding-inline-desktop: 5rem;
-$main-color: rgb(0, 0, 0);
+$main-color: rgb(77, 19, 209);
 
 a,
 a:link,
@@ -42,7 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
+    // border: 1px solid black;
     padding-inline: 10rem;
     .icon_title {
       display: flex;
@@ -75,6 +75,7 @@ header {
       }
       figCaption {
         .name {
+          color: $main-color;
           font-weight: 700;
           font-size: min(1.8rem);
         }
@@ -153,8 +154,11 @@ header {
       margin-top: 3rem;
       a {
         margin-bottom: 3.2rem;
-
-        border-radius: 100%;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.5);
+          color: black;
+        }
       }
     }
   }

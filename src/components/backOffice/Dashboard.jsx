@@ -2,7 +2,7 @@ import React from "react";
 import "../../sass/_main.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faHome, faPencilAlt, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Dashboard = () => {
   return (
@@ -46,10 +46,10 @@ const Dashboard = () => {
         <aside className="sideNav">
           <div className="content">
             <div className="menuElements">
-            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
-            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
-            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
-            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
+            <a href="">  <FontAwesomeIcon icon={faPlus} /></a>
+            <a href="">  <FontAwesomeIcon icon={faPencilAlt} /></a>
+            <a href="">  <FontAwesomeIcon icon={faHome} /></a>
+            <a href="">  <FontAwesomeIcon icon={faUser} /></a>
             </div>
          
 
