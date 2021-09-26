@@ -45,7 +45,14 @@ const Dashboard = () => {
         </nav>
         <aside className="sideNav">
           <div className="content">
-            <div className="logo"></div>
+            <div className="menuElements">
+            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
+            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
+            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
+            <a href="">  <FontAwesomeIcon icon={faBars} /></a>
+            </div>
+         
+
           </div>
         </aside>
       </header>
