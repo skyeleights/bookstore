@@ -43,8 +43,15 @@ const Dashboard = () => {
             </div>
           </figure>
         </nav>
+        <aside className="sideNav">
+          <div className="content">
+            <div className="logo"></div>
+          </div>
+        </aside>
       </header>
-      <main></main>
+      <main>
+        <h3>is this working</h3>
+      </main>
     </body>
   );
 };
