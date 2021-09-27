@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../../sass/_main.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,13 +15,18 @@ import {
 
 const Dashboard = () => {
   const [display, setdisplay] = useState(false);
-
+  const SidebarRef = useRef();
   const dropdownDisplayer = function () {
     setdisplay(!display);
-    // setTimeout(() => {
-    //   setdisplay(false);
-    // }, 4000);
+    setTimeout(() => {
+      setdisplay(false);
+    }, 9000);
   };
+  const displaySideMenu = function () {
+    // console.log(SidebarRef.current);
+    SidebarRef.current.classList.toggle("d-none");
+  };
+  
   return (
     <body>
       <header>
@@ -66,9 +71,11 @@ const Dashboard = () => {
             )}
           </div>
         </nav>
+        {/* mobile navigation */}
+
         <nav className="navMobile">
           <div className="icon_title">
-            <div className="icon">
+            <div className="icon" onClick={displaySideMenu}>
               <FontAwesomeIcon icon={faBars} />
             </div>
             <div className="title">
@@ -104,7 +111,8 @@ const Dashboard = () => {
             )}
           </figure>
         </nav>
-        <aside className="sideNav">
+        {/* Aside navbar */}
+        <aside className="sideNav " ref={SidebarRef}>
           <div className="content">
             <div className="menuElements">
               <a href="">
