@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../sass/_main.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHome, faPencilAlt, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faHome,
+  faPenAlt,
+  faPencilAlt,
+  faPlus,
+  faSignOutAlt,
+  faStore,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Dashboard = () => {
+  const [display, setdisplay] = useState(false);
+
+  const dropdownDisplayer = function () {
+    setdisplay(!display);
+    // setTimeout(() => {
+    //   setdisplay(false);
+    // }, 4000);
+  };
   return (
     <body>
       <header>
@@ -18,15 +35,36 @@ const Dashboard = () => {
             </div>
           </div>
           <input type="text" placeholder="search" />
-          <figure>
-            <div className="img">
-              <img src="./images/dark8.jpg" alt="user" />
-            </div>
-            <figcaption>
-              <span className="name">John doe</span>
-              <span className="role">super admin</span>
-            </figcaption>
-          </figure>
+          <div>
+            <figure>
+              <div className="img" onClick={dropdownDisplayer}>
+                <img src="./images/dark8.jpg" alt="user" />
+              </div>
+              <figcaption>
+                <span className="name">John doe</span>
+                <span className="role">super admin</span>
+              </figcaption>
+            </figure>
+            {display === true ? (
+              <div className="dropdown">
+                <ul>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faStore} /> Store
+                  </li>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faPenAlt} />
+                    Change password
+                  </li>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faSignOutAlt} />
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
         </nav>
         <nav className="navMobile">
           <div className="icon_title">
@@ -39,20 +77,49 @@ const Dashboard = () => {
           </div>
           <figure>
             <div className="img">
-              <img src="./images/dark8.jpg" alt="user" />
+              <img
+                src="./images/dark8.jpg"
+                alt="user"
+                onClick={dropdownDisplayer}
+              />
             </div>
+            {display === true ? (
+              <div className="dropdown">
+                <ul>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faStore} /> Store
+                  </li>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faPenAlt} />
+                    Change password
+                  </li>
+                  <li>
+                    <FontAwesomeIcon className="icon" icon={faSignOutAlt} />
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              ""
+            )}
           </figure>
         </nav>
         <aside className="sideNav">
           <div className="content">
             <div className="menuElements">
-            <a href="">  <FontAwesomeIcon icon={faPlus} /></a>
-            <a href="">  <FontAwesomeIcon icon={faPencilAlt} /></a>
-            <a href="">  <FontAwesomeIcon icon={faHome} /></a>
-            <a href="">  <FontAwesomeIcon icon={faUser} /></a>
+              <a href="">
+                <FontAwesomeIcon icon={faPlus} />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faPencilAlt} />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faHome} />
+              </a>
+              <a href="">
+                <FontAwesomeIcon icon={faUser} />
+              </a>
             </div>
-         
-
           </div>
         </aside>
       </header>
