@@ -4,6 +4,7 @@
 }
 html {
   font-size: 10px;
+  box-sizing: border-box;
 }
 
 $padding-inline-mobile: 1.2rem;
@@ -117,6 +118,7 @@ header {
       }
       .title {
         font-size: 2rem;
+        color: $main-color;
       }
     }
     figure {
@@ -171,3 +173,5 @@ main {
     margin-top: 3.9rem;
   }
 }
+
+///drop down and side nav
