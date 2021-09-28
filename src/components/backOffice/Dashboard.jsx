@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import "../../sass/_main.scss";
 /// do the media queries thingy today
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useMediaQuery } from "react-responsive";
 import {
   faBars,
   faHome,
@@ -14,6 +15,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Dashboard = () => {
+  const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+  console.log(isMobile);
   const [display, setdisplay] = useState(false);
   const SidebarRef = useRef();
   const dropdownDisplayer = function () {
@@ -26,7 +29,7 @@ const Dashboard = () => {
     // console.log(SidebarRef.current);
     SidebarRef.current.classList.toggle("d-none");
   };
-  
+
   return (
     <body>
       <header>
@@ -112,7 +115,10 @@ const Dashboard = () => {
           </figure>
         </nav>
         {/* Aside navbar */}
-        <aside className="sideNav " ref={SidebarRef}>
+        <aside
+          className={isMobile ? "d-none sideNav" : "sideNav"}
+          ref={SidebarRef}
+        >
           <div className="content">
             <div className="menuElements">
               <a href="">
