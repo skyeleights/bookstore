@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../../sass/_main.scss";
-
+/// do the media queries thingy today
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
