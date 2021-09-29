@@ -11,6 +11,7 @@ html {
 $padding-inline-mobile: 1.2rem;
 $padding-inline-desktop: 5rem;
 $main-color: rgb(77, 19, 209);
+$color-secondary: rgb(99, 98, 98);
 
 a,
 a:link,
@@ -240,17 +241,13 @@ main {
         background-color: $main-color;
         .info {
           &-num {
-            font-weight: 800;
-            font-size: 3rem;
             color: white;
           }
           &-text {
-            font-size: 1.5rem;
             color: white;
           }
           &-icon {
             color: white;
-            font-size: 3rem;
           }
         }
       }
@@ -264,7 +261,7 @@ main {
         }
         &-text {
           font-size: 1.5rem;
-          color: rgb(99, 98, 98);
+          color: $color-secondary;
         }
         &-icon {
           color: $main-color;
