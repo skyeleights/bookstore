@@ -12,6 +12,11 @@ import {
   faSignOutAlt,
   faStore,
   faUser,
+  faUsers,
+  faCalendar,
+  faShoppingBag,
+  faDollarSign,
+  faMoneyBillWave,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Dashboard = () => {
@@ -141,30 +146,30 @@ const Dashboard = () => {
           <div className="thecard">
             <div className="info">
               <span className="info-num">45</span>
-              <FontAwesomeIcon className="info-icon" icon={faUser} />
+              <FontAwesomeIcon className="info-icon" icon={faUsers} />
             </div>
             <span className="info-text">Customers</span>
           </div>
           <div className="thecard">
             <div className="info">
-              <span className="info-num">45</span>
-              <FontAwesomeIcon className="info-icon" icon={faUser} />
+              <span className="info-num">79</span>
+              <FontAwesomeIcon className="info-icon" icon={faCalendar} />
             </div>
-            <span className="info-text">Customers</span>
+            <span className="info-text">Products</span>
           </div>
           <div className="thecard">
             <div className="info">
-              <span className="info-num">45</span>
-              <FontAwesomeIcon className="info-icon" icon={faUser} />
+              <span className="info-num">124</span>
+              <FontAwesomeIcon className="info-icon" icon={faShoppingBag} />
             </div>
-            <span className="info-text">Customers</span>
+            <span className="info-text">Orders</span>
           </div>
           <div className="thecard">
             <div className="info">
-              <span className="info-num">45</span>
-              <FontAwesomeIcon className="info-icon" icon={faUser} />
+              <span className="info-num">$6k</span>
+              <FontAwesomeIcon className="info-icon" icon={faMoneyBillWave} />
             </div>
-            <span className="info-text">Customers</span>
+            <span className="info-text">income</span>
           </div>
         </section>
       </main>

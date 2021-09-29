@@ -219,7 +219,7 @@ header {
 }
 
 main {
-  overflow: hidden;
+  // overflow: hidden;
   @media (min-width: 550px) {
     margin-inline: 10rem;
     margin-top: 3.9rem;
@@ -229,13 +229,23 @@ main {
     margin-top: 3.9rem;
   }
   .info_cards {
+    @media (min-width: 550px) {
+      display: flex;
+      justify-content: space-between;
+    }
     .thecard {
+      @media (min-width: 550px) {
+        width: 100%;
+        margin-bottom: 0px;
+      }
+      margin: 12px;
       padding: 2rem;
       box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.82);
-      margin: 12px;
       border-radius: 10px;
-      &:not(:last-child) {
-        margin-bottom: 3rem;
+      @media (max-width: 550px) {
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
       }
       &:last-child {
         background-color: $main-color;
@@ -258,6 +268,9 @@ main {
         &-num {
           font-weight: 800;
           font-size: 3rem;
+          @media (min-width: 550px) {
+            margin-right: 4rem;
+          }
         }
         &-text {
           font-size: 1.5rem;
