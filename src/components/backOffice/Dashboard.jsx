@@ -16,7 +16,6 @@ import {
 
 const Dashboard = () => {
   const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
-  console.log(isMobile);
   const [display, setdisplay] = useState(false);
   const SidebarRef = useRef();
   const dropdownDisplayer = function () {
@@ -138,7 +137,36 @@ const Dashboard = () => {
         </aside>
       </header>
       <main>
-        <h3>is this working</h3>
+        <section className="info_cards">
+          <div className="thecard">
+            <div className="info">
+              <span className="info-num">45</span>
+              <FontAwesomeIcon className="info-icon" icon={faUser} />
+            </div>
+            <span className="info-text">Customers</span>
+          </div>
+          <div className="thecard">
+            <div className="info">
+              <span className="info-num">45</span>
+              <FontAwesomeIcon className="info-icon" icon={faUser} />
+            </div>
+            <span className="info-text">Customers</span>
+          </div>
+          <div className="thecard">
+            <div className="info">
+              <span className="info-num">45</span>
+              <FontAwesomeIcon className="info-icon" icon={faUser} />
+            </div>
+            <span className="info-text">Customers</span>
+          </div>
+          <div className="thecard">
+            <div className="info">
+              <span className="info-num">45</span>
+              <FontAwesomeIcon className="info-icon" icon={faUser} />
+            </div>
+            <span className="info-text">Customers</span>
+          </div>
+        </section>
       </main>
     </body>
   );
