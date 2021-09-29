@@ -172,6 +172,24 @@ const Dashboard = () => {
             <span className="info-text">income</span>
           </div>
         </section>
+        {/* section 2 */}
+        <section className="otherInfo">
+          <div className="productsStats">
+            <div className="title">
+              <h2>Products</h2>
+              <button className="btn">See all</button>
+            </div>
+          <table className="table">
+            
+          </table>
+          </div>
+          <div className="customers">
+            <div className="title">
+              <h2>Products</h2>
+              <button className="btn">See all</button>
+            </div>
+          </div>
+        </section>
       </main>
     </body>
   );

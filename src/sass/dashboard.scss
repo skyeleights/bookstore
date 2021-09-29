@@ -219,7 +219,6 @@ header {
 }
 
 main {
-  // overflow: hidden;
   @media (min-width: 550px) {
     margin-inline: 10rem;
     margin-top: 3.9rem;
@@ -228,6 +227,8 @@ main {
     margin-inline: 4rem;
     margin-top: 3.9rem;
   }
+
+  ///section 1
   .info_cards {
     @media (min-width: 550px) {
       display: flex;
@@ -283,6 +284,8 @@ main {
       }
     }
   }
-}
 
-///drop down and side nav
+
+   ///section 2
+   
+}
