@@ -230,9 +230,9 @@ main {
 
   ///section 1
   .info_cards {
+    margin-bottom: 5rem;
     @media (min-width: 550px) {
       display: flex;
-      justify-content: space-between;
     }
     .thecard {
       @media (min-width: 550px) {
@@ -285,7 +285,46 @@ main {
     }
   }
 
-
-   ///section 2
-   
+  ///section 2
+  .otherInfo {
+    @media (min-width: 550px) {
+      padding-inline: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .productsStats {
+        width: 50%;
+      }
+    }
+    .productsStats {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn {
+          background-color: $color-secondary;
+          color: white;
+          padding: 1rem;
+          border: none;
+          border-radius: 5px;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .customers {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .btn {
+        background-color: $color-secondary;
+        color: white;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.4rem;
+      }
+    }
+  }
 }

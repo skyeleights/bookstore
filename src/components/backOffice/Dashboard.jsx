@@ -179,13 +179,11 @@ const Dashboard = () => {
               <h2>Products</h2>
               <button className="btn">See all</button>
             </div>
-          <table className="table">
-            
-          </table>
+            <table className="table"></table>
           </div>
           <div className="customers">
             <div className="title">
-              <h2>Products</h2>
+              <h2>Users</h2>
               <button className="btn">See all</button>
             </div>
           </div>
