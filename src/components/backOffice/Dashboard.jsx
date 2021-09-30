@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../../sass/_main.scss";
 /// do the media queries thingy today
+//// do stuff later
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMediaQuery } from "react-responsive";
 import {
